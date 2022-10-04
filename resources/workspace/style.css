@@ -1,0 +1,64 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(0, 26, 255);
+}
+
+body {
+    background-color: beige;
+}
+
+title {
+    float: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    /* Timer Style */
+    color: black;
+    font-size: 1.3em;
+    background-color: aliceblue;
+    margin: auto;
+    font-weight: bold;
+}
+
+button {
+    outline: none;
+    background-color: rgb(251, 255, 0);
+    color: black;
+    font-weight: bold;
+    float: left;
+    box-sizing: content-box;
+
+}
+
+.outer-container {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: :start
+}
+
+.top-bar {
+    float: right
+}
+
+.top-bar p {
+    float: right;
+}
+
+.inner-container {
+    width: : 50%;
+    height: 100%;
+    margin: 0%, auto;
+    background-color: blue;
+
+}
