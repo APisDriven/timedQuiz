@@ -5,7 +5,7 @@
     <meta name ="viewport" content="width=device-width, initial-scale-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/workspace/style.css"
+    <link rel="stylesheet" href="./resources/workspace/style.css">
     <title>JS Quiz</title>
 </head>
 <body>
@@ -13,23 +13,64 @@
         <!--main outer div-->
         <div class="top-bar">
             <!--top bar div-->
-            <button>View High Scores </button>
-            <p>Timer: 00:00</p>
+            <button id="high-scores-btn">View High Scores </button>
+            <p class="container">Time Left 00:<span id="time">00</span></p>
         </div>
 
         <div class="inner-container">
             <!--inner div-->
-            <header class="quiz-intro">
+            <header class="quiz-intro" id="quiz-intro">
                 <!--header/Intro-->
-
+                <!-- Phase 1 -->
+                <h1>Welcome to the JS Quiz!</h1>
+                <p>Click the start button to begin</p>
+                <button id="startBtn">Start Quiz!</button>
             </header>
             <main>
                 <!--Quiz Content-->
+                <!-- Phase 2 -->
+                <section class="hide" id="question-screen">
+                    <div>
+                        <h2>Question Here</h2>
+                        <ul>
+                            <!-- This will be generated in JS -->
+                            <li><button>Answer 1</button></li>
+                            <li><button>Answer 1</button></li>
+                            <li><button>Answer 1</button></li>
+                            <li><button>Answer 1</button></li>
+                        </ul>
+                    </div>
+                   
+                </section>
+
+                <!-- Phase 3 -->
+                <section class="hide" id="finish-screen">
+                    <h2>All Done! Nice Work.</h2>  
+                    <p>Your Score: <span id="score">0</span></p>
+                    <div>
+                        <label for="name">Enter Initials</label>
+                        <input id="player-name" type="text">
+                        <button id="submit-name">Submit</button>
+                    </div>
+                </section>
+
+                <!-- Phase 4 -->
+                <section class="hide" id="highScore-screen">
+                    <h2>High Scores:</h2>
+                    <ol id="highScore-list">
+                        <!-- This will be generated in JS -->
+                        <li>WH - 20</li>
+                        <li>WH - 20</li>
+                        <li>WH - 20</li>
+                        <li>WH - 20</li>
+                    </ol>
+                    <button id="restart-btn">Restart Quiz</button>
+                </section>
 
 
             </main>
         </div>
     </div>
-    
+    <script src="./resources/workspace/script.js"></script>
 </body>
 </html>

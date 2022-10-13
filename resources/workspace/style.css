@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid rgb(0, 26, 255);
+    border: 1px solid rgba(43, 53, 140, 0.838);
+    color: black;
 }
 
 body {
-    background-color: beige;
+    background-color: rgba(236, 236, 226, 0.257);
+    overflow: hidden;
 }
 
 title {
@@ -24,19 +25,29 @@ p {
     /* Timer Style */
     color: black;
     font-size: 1.3em;
-    background-color: aliceblue;
+    background-color: rgba(236, 236, 226, 0.257);
     margin: auto;
     font-weight: bold;
 }
 
 button {
+    /* High Score Button Style */
     outline: none;
-    background-color: rgb(251, 255, 0);
     color: black;
+    font-size: 1.3em;
+    background-color: aliceblue;
+    margin: auto;
     font-weight: bold;
-    float: left;
     box-sizing: content-box;
+}
 
+h1, h2 {
+    color: rgba(43, 53, 140, 0.838);
+    text-align: center;
+}
+
+li {
+    list-style: none;
 }
 
 .outer-container {
@@ -44,7 +55,7 @@ button {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: :start
+    justify-content: start;
 }
 
 .top-bar {
@@ -56,9 +67,50 @@ button {
 }
 
 .inner-container {
-    width: : 50%;
+    /* Quiz Content Area */
+    margin: auto;
+    width: 50%;
     height: 100%;
     margin: 0%, auto;
-    background-color: blue;
+    background-color: rgba(236, 236, 226, 0.257);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.quiz-intro {
+    margin-bottom: 30vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+}
+
+.quiz-intro p {
+    text-align: center;
+}
+
+/* main quiz content */
+
+main {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.highscores-screen ol {
+    overflow-y: scroll;
+
+}
+
+#quiz-intro {
+    text-align: center;
+    
+}
+
+#finish-screen {
+}
+
+#highScore-screen {
 }
